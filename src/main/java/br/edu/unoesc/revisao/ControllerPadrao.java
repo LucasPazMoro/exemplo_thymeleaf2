@@ -14,7 +14,7 @@ public class ControllerPadrao {
 	String home(Model modelo) {
 		modelo.addAttribute("mensagem", "info do modelo" );
 
-		Produto p = new Produto("cadeira", 12, new BigDecimal("500.99"));
+		Produto p = new Produto("cadeiras", 12, new BigDecimal("500.99"));
 		modelo.addAttribute("produto", p);
 		
 		return "index";
