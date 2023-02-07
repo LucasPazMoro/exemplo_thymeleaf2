@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Olá Mundo!</title>
+</head>
+<body>
+<h2>
+	<p th:text=${mensagem}> //th signigica Thymeleaf 
+							//:text é o do tipo texto,
+							${mensagem} a variavel "mensagem" la do controlador padrão. vai mostar o contéudo desse variável. 
+	
+	</p>
+	
+	<br>
+	
+	<span th:text="${produto}"></span>
+	<br>
+	<span th:text="${produto.nome}"></span>
+
+</body>
+</html>
